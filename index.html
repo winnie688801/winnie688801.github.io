@@ -99,7 +99,7 @@ var endDate = new Date(2019,10,26,11,00);
 var spantime = (endDate - startDate)/1000;
  
 function getString(dt){
-    return dt.getFullYear() + "年" + (dt.getMonth()+1) + "月" +    dt.getDate() + "日" + dt.getHours() + "时" + dt.getMinutes() + "分";
+    return dt.getFullYear() + "年" + (dt.getMonth()+1) + "月" +    dt.getDate() + "日" + dt.getHours() + "時" + dt.getMinutes() + "分";
 }
 function cal(){
     spantime --;
@@ -107,7 +107,7 @@ function cal(){
     var h = Math.floor((spantime % (24*3600))/3600);
     var m = Math.floor((spantime % 3600)/(60));
     var s = Math.floor(spantime%60);
-    str = d + "天 " + h + "时 " + m + "分 " + s + "秒 ";
+    str = d + "天 " + h + "時 " + m + "分 " + s + "秒 ";
     document.getElementById("pad").innerHTML = str;
 }
  
@@ -119,8 +119,8 @@ window.onload = function(){
 </SCRIPT>  
 </head>
 <body>
-現在時間：<span id="start_pad"></span><br>
-108年hbl開打：<span id="end_pad"></span><br>
-剩餘時間：<span id="pad"></span>
+<font size="6">現在時間：<span id="start_pad"></span><br>
+<font size="6">108年hbl開打：<span id="end_pad"></span><br>
+<font size="6">剩餘時間：<span id="pad"></span>
   </body>
 </html>
